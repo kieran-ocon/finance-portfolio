@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>KO Finance Portfolio</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-badge">KO</span>
+        <span>KO Finance Portfolio</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#excel">Excel</a>
+        <a href="#data">Python / SQL</a>
+        <a href="#pitch">Stock Pitch</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="toggle-theme" id="themeToggle" aria-label="Toggle theme">☼</button>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal show">
+        <div class="eyebrow">Finance • Valuation • Dashboards • Data Visualization</div>
+        <h1>Building finance models that turn data into decisions.</h1>
+        <p>
+          I’m building a portfolio focused on financial modeling, valuation, reporting dashboards,
+          and data-driven analysis. The goal is to showcase the kind of work relevant to analyst,
+          private equity, and financial management roles through polished, practical projects.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#excel" class="btn btn-primary">View Excel Projects</a>
+          <a href="#data" class="btn btn-secondary">Explore Python / SQL</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-label">Core Excel Projects</div>
+            <div class="stat-value">3</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Data Visualization Builds</div>
+            <div class="stat-value">2</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Pitch / Research Pieces</div>
+            <div class="stat-value">2</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal show">
+        <div class="terminal">
+          <div class="terminal-top">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-label">project snapshot</div>
+          </div>
+          <div class="terminal-body">
+            <div class="mini-card">
+              <div class="mini-top">
+                <span>Featured Model</span>
+                <span>Apple Inc.</span>
+              </div>
+              <div class="mini-title">3-Statement Financial Model &amp; DCF Valuation</div>
+              <div class="bar-wrap">
+                <div class="bar-row">
+                  <span>Revenue</span>
+                  <div class="bar"><span style="width: 82%"></span></div>
+                  <strong>Forecast</strong>
+                </div>
+                <div class="bar-row">
+                  <span>FCF</span>
+                  <div class="bar"><span style="width: 67%"></span></div>
+                  <strong>DCF</strong>
+                </div>
+                <div class="bar-row">
+                  <span>WACC</span>
+                  <div class="bar"><span style="width: 49%"></span></div>
+                  <strong>Sensitivity</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <div class="mini-top">
+                <span>Deal Model</span>
+                <span>Sample LBO</span>
+              </div>
+              <div class="mini-title">IRR, MOIC, Exit Multiple, Leverage Cases</div>
+              <div class="chip-row">
+                <span class="chip">Sources &amp; Uses</span>
+                <span class="chip">Synergies</span>
+                <span class="chip">Pro Forma</span>
+                <span class="chip">Returns</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <div class="mini-top">
+                <span>Dashboard</span>
+                <span>Interactive</span>
+              </div>
+              <div class="mini-title">Financial KPI Reporting with Pivot Tables &amp; Slicers</div>
+              <div class="chip-row">
+                <span class="chip">Revenue Growth</span>
+                <span class="chip">Net Margin</span>
+                <span class="chip">ROE</span>
+                <span class="chip">FCF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <h2>Project Library</h2>
+            <p>
+              This portfolio is organized into Excel-based finance projects, Python / SQL data visualizations,
+              and investment research pieces such as stock pitches and presentation-style analysis.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter-bar" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="excel">Excel Models</button>
+          <button class="filter-btn" data-filter="data">Python / SQL</button>
+          <button class="filter-btn" data-filter="research">Research / Pitch</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="excel">
+            <div class="project-top">
+              <div>
+                <span class="pill">Excel • Valuation</span>
+                <h3 class="project-title">3-Statement Financial Model &amp; DCF Valuation – Apple Inc.</h3>
+                <p class="project-desc">
+                  A fully integrated financial model built using Apple’s 2024 financial statements. The model forecasts operating performance,
+                  constructs free cash flow (FCF), and estimates intrinsic value through discounted cash flow (DCF) valuation with dynamic scenario analysis.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">DCF Valuation</span>
+                <span class="chip">Free Cash Flow</span>
+                <span class="chip">NOPAT</span>
+                <span class="chip">WACC</span>
+                <span class="chip">Terminal Value</span>
+                <span class="chip">Scenario Analysis</span>
+              </div>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <strong>Model Structure</strong>
+                  <span>Income statement, operating balance sheet, FCF model, valuation bridge, and scenario-driven outputs.</span>
+                </div>
+                <div class="feature-item">
+                  <strong>Valuation Approach</strong>
+                  <span>Two-stage DCF model with Gordon Growth terminal value and enterprise-to-equity value conversion.</span>
+                </div>
+                <div class="feature-item">
+                  <strong>Excel Skills</strong>
+                  <span>XLOOKUP-driven scenario selection, dynamic inputs, financial modeling, and structured valuation logic.</span>
+                </div>
+                <div class="feature-item">
+                  <strong>Key Output</strong>
+                  <span>Intrinsic value of ~$184/share with sensitivity to WACC and terminal growth assumptions.</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href = https://1drv.ms/x/c/006c420ebc3e57b2/IQCoJTXRE7eLRJjuSYpuaLnbAcufkTF4K7gk10ZLfwW0evE?e=8jv5U7
+                  class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  View Model
+                </a>
+                <a href="files/Apple_Inc_DCF_Model_and_Valuation.xlsx" class="btn btn-secondary" download>
+                  Download Excel File
+                </a>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="excel">
+            <div class="project-top">
+              <div>
+                <span class="pill">Excel • M&amp;A / PE</span>
+                <h3 class="project-title">Private Equity LBO &amp; Acquisition Model – Sample Deal Analysis</h3>
+                <p class="project-desc">
+                  A deal model built to assess acquisition attractiveness through transaction assumptions,
+                  sources and uses, pro forma financials, leverage cases, and return metrics.
+                </p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">Purchase Price</span>
+                <span class="chip">Debt vs Equity</span>
+                <span class="chip">Synergies</span>
+                <span class="chip">IRR</span>
+                <span class="chip">MOIC</span>
+                <span class="chip">Exit Multiple</span>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><strong>Transaction Logic</strong><span>Purchase price, financing structure, and uses of capital framework.</span></div>
+                <div class="feature-item"><strong>Returns Analysis</strong><span>IRR, MOIC, payback period, and operating case comparisons.</span></div>
+                <div class="feature-item"><strong>Visual Analysis</strong><span>Leverage scenario tables and exit multiple sensitivity views.</span></div>
+              </div>
+              <div class="project-actions">
+                <a href = https://1drv.ms/x/c/006c420ebc3e57b2/IQAK6k_XBoI5TrCWoWEhPxyHAeBYOtY4vITA2gl26498fRk?e=FKrsZq
+                  class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  View Model
+                </a>
+                <a href="files/lbo-acquisition-model.xlsx" class="btn btn-secondary" download>
+                  Download Excel File
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="excel">
+            <div class="project-top">
+              <div>
+                <span class="pill">Excel • Dashboarding</span>
+                <h3 class="project-title">Interactive Financial Performance Dashboard – Apple vs. Microsoft</h3>
+                <p class="project-desc">
+                  An interactive Excel dashboard built to analyze and compare Apple and Microsoft across key financial metrics,
+                  including revenue, net margin, ROE, free cash flow, debt ratio, and asset turnover. The model includes
+                  dynamic company and year selection for KPI retrieval while the charts continue to display full historical trends.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">Pivot Tables</span>
+                <span class="chip">Pivot Charts</span>
+                <span class="chip">XLOOKUP</span>
+                <span class="chip">Dynamic Dropdowns</span>
+                <span class="chip">Financial Ratios</span>
+                <span class="chip">Dashboard Design</span>
+              </div>
+
+              <div class="feature-list">
+                <div class="feature-item"><strong>Dashboard Functionality</strong><span>Interactive company and year selection with KPI retrieval while charts remain fully historical.</span></div>
+                <div class="feature-item"><strong>Metrics Covered</strong><span>Revenue, net margin, ROE, free cash flow, debt ratio, and asset turnover.</span></div>
+                <div class="feature-item"><strong>Excel Skills</strong><span>Multi-criteria XLOOKUP, dynamic dropdowns using FILTER and UNIQUE, pivot logic, charting, and KPI modeling.</span></div>
+              </div>
+
+              <div class="project-actions">
+                <a href = https://1drv.ms/x/c/006c420ebc3e57b2/IQBXFQ8Jvd2bRJKU1iAQ88j7AVqtfrmaCZTVXHqCLVvpqXY?e=W1HdCs 
+                  class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  View Model
+                </a>
+                <a href="files/Financial_Performance_Dashboard.xlsx" class= "btn btn-secondary" download>
+                  Download Excel File
+                </a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="data">
+            <div class="project-top">
+              <div>
+                <span class="pill">Python / SQL • Data Viz</span>
+                <h3 class="project-title">Market Dashboard – Python Visualization Tool</h3>
+                <p class="project-desc">
+                  A data visualization build that tracks returns, volatility, valuation metrics,
+                  and portfolio-style comparisons with clean charts and summary insights.
+                </p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">Matplotlib / Plotly</span>
+                <span class="chip">APIs / CSV</span>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><strong>Use Case</strong><span>Showcases data cleaning, transformation, and visual storytelling.</span></div>
+                <div class="feature-item"><strong>Output</strong><span>Interactive market or portfolio analytics dashboard.</span></div>
+                <div class="feature-item"><strong>Target Roles</strong><span>Analyst, asset management, data-driven finance roles.</span></div>
+                <div class="feature-item"><strong>Status</strong><span>Planned build with room for expanding into live market data.</span></div>
+              </div>
+              <div class="project-actions">
+                <a href="#data" class="btn btn-primary">(Adding soon)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-top">
+              <div>
+                <span class="pill">Python / SQL • Data Viz</span>
+                <h3 class="project-title">SQL Financial Performance Explorer</h3>
+                <p class="project-desc">
+                  A SQL-backed analysis tool that queries financial datasets and feeds dashboards for trend,
+                  peer, and ratio analysis across multiple periods or companies.
+                </p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">SQL</span>
+                <span class="chip">Joins</span>
+                <span class="chip">CTEs</span>
+                <span class="chip">KPIs</span>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><strong>Use Case</strong><span>Demonstrates structured querying and business insight extraction.</span></div>
+                <div class="feature-item"><strong>Output</strong><span>Ratio tables, trend summaries, and company comparisons.</span></div>
+                <div class="feature-item"><strong>Target Roles</strong><span>Analyst, finance operations, reporting, business intelligence.</span></div>
+                <div class="feature-item"><strong>Status</strong><span>Planned build ready to connect with Python visuals or dashboards.</span></div>
+              </div>
+              <div class="project-actions">
+                <a href="#data" class="btn btn-primary">(Adding soon)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="research">
+            <div class="project-top">
+              <div>
+                <span class="pill">Research / Presentation</span>
+                <h3 class="project-title">Equity Stock Pitch – Investment Thesis Presentation</h3>
+                <p class="project-desc">
+                  A concise investment pitch focused on company overview, thesis, catalysts, valuation,
+                  risks, and recommendation supported by financial and market evidence.
+                </p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="chip-row">
+                <span class="chip">Catalysts</span>
+                <span class="chip">Valuation</span>
+                <span class="chip">Risk Analysis</span>
+                <span class="chip">Recommendation</span>
+              </div>
+              <div class="feature-list">
+                <div class="feature-item"><strong>Purpose</strong><span>Shows investment thinking, clarity, and presentation structure.</span></div>
+                <div class="feature-item"><strong>Ideal Format</strong><span>Slide deck with charts, comps, and concise narrative.</span></div>
+                <div class="feature-item"><strong>Target Roles</strong><span>Equity research, capital markets, investments, analyst roles.</span></div>
+                <div class="feature-item"><strong>Status</strong><span>Reserved project slot for a high-conviction pitch.</span></div>
+              </div>
+              <div class="project-actions">
+                <a href="#pitch" class="btn btn-primary">(Adding soon)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="excel">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <h2>Excel Finance Projects</h2>
+            <p>
+              These three projects are the core of the portfolio. Together they show valuation,
+              transaction analysis, and management reporting skills that apply across analyst, private equity,
+              and corporate finance roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">Why These Projects Matter</h3>
+            <div class="list-stack">
+              <div class="small-card">
+                <h3>• Core financial modeling</h3>
+                <p>Demonstrates full 3-statement integration, valuation (DCF), and sensitivity analysis used in investment banking and corporate finance.</p>
+              </div>
+              <div class="small-card">
+                <h3>• Transaction & deal analysis </h3>
+                <p>Shows understanding of acquisitions, leverage, capital structure, and return metrics (IRR, MOIC). </p>
+              </div>
+              <div class="small-card">
+                <h3>• Decision-ready reporting </h3>
+                <p>Transforms financial data into dashboards and KPIs for real-world business decision making.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">Workbook structure</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time">Model 01</div>
+                <div class="content">
+                  <strong>3-Statement DCF</strong>
+                  <p>Tabs:
+                      Cover • Assumptions • Income Statement • Balance Sheet • Cash Flow  
+                      Supporting Schedules • DCF Valuation • Sensitivity Analysis • Dashboard
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time">Model 02</div>
+                <div class="content">
+                  <strong>M&amp;A / LBO</strong>
+                  <p>Tabs:
+                      Deal Inputs • Sources & Uses • Pro Forma Financials  
+                      Debt Schedule • Returns Analysis • Sensitivity • Summary
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time">Model 03</div>
+                <div class="content">
+                  <strong>Financial Dashboard</strong>
+                  <p>Tabs:
+                    Raw Data • Power Query • KPI Calculations  
+                    Pivot Tables • Dashboard • Notes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="data">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <h2>Python / SQL Data Visualization (Coming Soon)</h2>
+            <p>
+              This section will extend the financial modeling work into code-based analysis,
+              focusing on automation, data querying, and scalable financial insights.
+            </p>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">Planned builds include:</h3>
+            <div class="list-stack">
+              <div class="small-card">
+                <h3>Portfolio Analytics Dashboard (Python)</h3>
+                <p>Performance tracking, volatility analysis, and benchmark comparisons</p>
+              </div>
+              <div class="small-card">
+                <h3>Financial Statement Trend Explorer(SQL)</h3>
+                <p>Use queries to pull multi-period company data, calculate ratios, and surface peer-level comparisons for dashboards.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">What these add to the portfolio</h3>
+            <div class="chip-row" style="margin-bottom: 1rem;">
+              <span class="chip">Automation</span>
+              <span class="chip">Data Cleaning</span>
+              <span class="chip">Scalability</span>
+              <span class="chip">Visualization</span>
+              <span class="chip">Query Logic</span>
+            </div>
+            <p>
+              Together, these show that you are not limited to spreadsheet work. You can collect,
+              structure, analyze, and visualize financial data using multiple tools, which makes your
+              portfolio feel more complete and modern.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pitch">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <h2>Research & Investment Communication (Coming Soon)</h2>
+            <p>
+              This section focuses on investment analysis and presentation skills,
+              including structured stock pitches and market research. Planned work includes:
+            </p>
+          </div>
+        </div>
+
+        <div class="split-grid">
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">• Equity Research Pitch</h3>
+            <div class="small-card">
+              <p>Company overview, thesis, catalysts, valuation, downside risks, and final recommendation in presentation format.</p>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3 style="margin-bottom: 1rem;">•  Market / Industry Analysis Presentation</h3>
+            <div class="small-card">
+              <p> Sector-level insights and macro-driven investment perspectives</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container reveal">
+        <div class="panel contact-card">
+          <div>
+            <h2 style="margin-bottom: 0.5rem;">Let’s connect</h2>
+            <p>
+              Feel free to reach out for opportunities, or to learn more about my work.
+            </p>
+            <div style="margin-top: 1rem; display: grid; gap: 0.4rem;">
+              <p><strong>Email:</strong> <a href="mailto:kieran.oconnell@torontomu.ca">kieran.oconnell@torontomu.ca</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oconnell-kieran" target="_blank">linkedin.com/in/oconnell-kieran</a></p>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="mailto:kieran.oconnell@torontomu.ca" class="btn btn-primary">Email Me</a>
+            <a href="https://www.linkedin.com/in/oconnell-kieran" target="_blank" class="btn btn-secondary">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> KO Finance Portfolio</p>
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
