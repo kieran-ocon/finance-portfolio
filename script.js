@@ -1,17 +1,3 @@
-const themeToggle = document.getElementById('themeToggle');
-const storedTheme = localStorage.getItem('ko-finance-theme');
-
-if (storedTheme === 'light') {
-  document.body.classList.add('light');
-}
-
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  localStorage.setItem(
-    'ko-finance-theme',
-    document.body.classList.contains('light') ? 'light' : 'dark'
-  );
-});
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
