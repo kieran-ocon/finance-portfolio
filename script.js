@@ -39,6 +39,13 @@ const updateActiveNav = () => {
   });
 };
 
+const savedTheme = localStorage.getItem('ko-finance-theme');
+
+if (savedTheme === 'light') {
+  document.body.classList.add('light');
+} else {
+  document.body.classList.remove('light'); // default = dark
+}
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav();
 
